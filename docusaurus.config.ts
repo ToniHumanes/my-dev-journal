@@ -14,7 +14,8 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://ToniHumanes.github.io/my-dev-journal",
+  // NOTE: `url` must not include a sub-path. Put repo sub-paths into `baseUrl`.
+  url: "https://ToniHumanes.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/my-dev-journal/",
