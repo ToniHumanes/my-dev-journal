@@ -14,15 +14,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://ToniHumanes.github.io/my-dev-journal",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/my-dev-journal/",
   trailingSlash: false,
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "ToniHumanes", // Usually your GitHub org/user name.
+  projectName: "my-dev-journal", // Usually your repo name.
 
   onBrokenLinks: "throw",
 
@@ -77,7 +77,7 @@ const config: Config = {
       title: "My Dev Journal",
       logo: {
         alt: "My Dev Journal Logo",
-        src: "img/logo.jpeg",
+        src: "img/logo.png",
       },
       items: [
         {
