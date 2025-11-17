@@ -1,0 +1,151 @@
+---
+sidebar_position: 2
+---
+
+import { SetDemo } from "./setDemo";
+
+# Estructura de Datos con Set
+
+¿Qué es `Set`?
+
+`Set` es una colección de valores únicos en JavaScript. A diferencia de los arrays, un `Set` **no permite valores duplicados**, lo que lo hace ideal para almacenar elementos que no queremos que se repitan. Los valores en un `Set` pueden ser de cualquier tipo, ya sean primitivos o referencias a objetos.
+
+Vamos a ver todos los métodos que tenemos en esta estructura de datos y al final de toda esta explicación pondré un ejemplo real para entenderlo mejor.
+
+Lo primero que vamos a tener que hacer es instanciar un nuevo `Set`:
+
+```js
+const set = new Set();
+```
+
+Hasta aquí fácil y sencillo, ¿verdad?
+
+Esta instancia de la clase `Set` nos permite utilizar varios métodos para manipular los datos que contiene. Vamos a ver algunos de los más comunes.
+
+### add()
+
+El método `add` nos permite agregar un nuevo valor al `Set`. Si el valor ya existe, no se agregará de nuevo, manteniendo los valores únicos.
+
+```js
+const set = new Set();
+set.add("pepe");
+set.add("juan");
+set.add("marta");
+set.add("pepe"); // Este valor no se agregará de nuevo
+console.log(set);
+> Resultado:
+Set(3) { "pepe", "juan", "marta" }
+```
+
+Aquí, estamos utilizando el método `add` para agregar valores al `Set`. El resultado será un `Set` que contiene solo los valores únicos: `"pepe"`, `"juan"` y `"marta"`.
+
+### Encadenar add()
+
+El método `add` también permite encadenar múltiples llamadas para agregar varios valores en una sola línea.
+
+```js
+const set = new Set();
+set.add("pepe").add("juan").add("marta");
+console.log(set);
+> Resultado:
+Set(3) { "pepe", "juan", "marta" }
+```
+
+### has()
+
+El método `has` nos permite verificar si un valor específico existe en el `Set`.
+
+```js
+const set = new Set(["pepe", "juan", "marta"]);
+console.log(set.has("juan")); // true
+console.log(set.has("lucas")); // false
+```
+
+### delete()
+
+El método `delete` nos permite eliminar un valor específico del `Set`.
+
+```js
+const set = new Set(["pepe", "juan", "marta"]);
+set.delete("juan");
+console.log(set);
+> Resultado:
+Set(2) { "pepe", "marta" }
+```
+
+### clear()
+
+El método `clear` nos permite eliminar todos los valores del `Set`.
+
+```js
+const set = new Set(["pepe", "juan", "marta"]);
+set.clear();
+console.log(set);
+> Resultado:
+Set(0) {}
+```
+
+### size
+
+La propiedad `size` nos permite obtener el número de elementos en el `Set`.
+
+```js
+const set = new Set(["pepe", "juan", "marta"]);
+console.log(set.size); // 3
+```
+
+Aquí, estamos utilizando la propiedad `size` para obtener el número de elementos en el `Set`. El resultado será `3`, ya que hemos agregado tres valores únicos.
+
+### Recorrido de un Set
+
+Podemos recorrer los elementos de un `Set` utilizando un bucle `for...of` o el método `forEach`.
+
+```js
+const set = new Set(["pepe", "juan", "marta"]);
+
+// Usando for...of
+for (const elemento of set) {
+  console.log(elemento);
+}
+
+// Usando forEach
+set.forEach((elemento) => {
+  console.log(elemento);
+});
+```
+
+### Ejemplo Práctico
+
+Vamos a ver un ejemplo práctico donde podemos utilizar `set` para crear un controlador de usuarios únicos en la aplicación.
+
+Podemos utilizar un `Set` para almacenar los correos electrónicos de los usuarios y asegurarnos de que no se repitan. Con esta comprobación podemos evitar llamadas innecesarias a la api y validar nuestro formulario.
+
+Seguramente estéis pensando que esto se hace a traves de librerías de formularios como `react-hook-form` o `formik`, y tenéis razón, pero el objetivo de este ejemplo es entender el funcionamiento de los `Set`.
+
+La clave es utilizar el `Set` para comprobar datos únicos y ver que es más sencillo y más eficiente que cuando usamos un array, después de este ejemplo explico por qué es más eficiente.
+
+```js
+// Instanciamos un Set para almacenar los correos electrónicos únicos
+const usedEmails = new Set<string>();
+
+// Cuando llamamos a la API y obtenemos los usuarios guardamos sus correos en el Set
+const data: UserDTO[] = await fetchData(endpoint);
+data.forEach((user: UserDTO) => usedEmails.add(user.email));
+
+// Una de las validaciones del formulario es comprobar si el correo ya existe
+if (usedEmails.has(email)) {
+    setEmailError("Este email ya está en uso");
+    return;
+}
+
+// Solo si las validaciones son correctas, añadimos el correo al Set y guardamos el usuario
+usedEmails.add(email);
+```
+
+En este ejemplo, el uso de `Set` es más eficiente que un array porque las operaciones de búsqueda (`has`) y de inserción (`add`) tienen una complejidad promedio de O(1), mientras que en un array estas operaciones pueden llegar a ser O(n). Esto hace que `Set` sea ideal para manejar datos únicos, como correos electrónicos, de manera rápida y sencilla.
+
+### Demo
+
+Intenta añadir un correo repetido y verás como aparece un mensaje de error indicándote que el correo ya existe.
+
+<SetDemo />

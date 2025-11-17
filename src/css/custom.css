@@ -34,7 +34,7 @@
   --ifm-color-primary-lighter: #fff2bf;
   --ifm-color-primary-lightest: #fff9df;
 
-  --ifm-color-secondary: #5aa0f0; /* slightly brighter secondary in dark */
+  --ifm-color-secondary: #2e82e1; /* slightly brighter secondary in dark */
   --ifm-color-tertiary: #8f6cf6;
 
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
