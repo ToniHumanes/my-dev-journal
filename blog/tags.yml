@@ -1,19 +1,24 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+product:
+  label: Producto
+  permalink: /product
+  description: Product tag description
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+business:
+  label: Negocio
+  permalink: /business
+  description: Business tag description
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+development:
+  label: Desarrollo
+  permalink: /development
+  description: Development tag description
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+features:
+  label: Features
+  permalink: /features
+  description: Features tag description
+
+data:
+  label: Datos
+  permalink: /data
+  description: Data tag description

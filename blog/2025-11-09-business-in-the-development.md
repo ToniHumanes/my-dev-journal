@@ -1,16 +1,11 @@
 ---
 authors: antoniohumanes
 title: "El mayor error que cometí como desarrollador: no entender el negocio"
-tags:
-  - Producto
-  - Negocio
-  - Desarrollo
-  - Features
+tags: [product, business, development, features]
 ---
 
-<img src={require("@site/blog/img/money.jpg").default} style={{margin: "1rem 0px 1rem"}}/>
-
-**¿Sabes de donde sale tu salario?** 💵
+![Imagen de dinero en dolares sobre una mesa](@site/blog/img/money.jpg)
+<sub>Foto de [Alexander Grey](https://unsplash.com/es/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) en [Unsplash](https://unsplash.com/es/fotos/billetes-de-1-dolar-estadounidense-8lnbXtxFGZw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</sub>
 
 La mayoría de developers saben escribir código.
 Muy pocos saben por qué ese código genera dinero.
@@ -109,4 +104,4 @@ No es ser menos developer.
 
 Es saber por qué escribes lo que escribes.
 
-Y cuando entiendes ese porqué, tu valor se dispara... y el de proyecto también.
+Y cuando entiendes ese porqué, tu valor se dispara… y el del proyecto también.
