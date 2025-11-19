@@ -4,11 +4,11 @@ title: "¿Sabes de dónde sale tu salario?"
 tags: [product, business, development, features]
 ---
 
-![Imagen de dinero en dolares sobre una mesa](@site/blog/img/money.jpg)
+![Imagen de dinero en dólares sobre una mesa](@site/blog/img/money.jpg)
 
-Cuando empecé en el desarrollo de software, me obsesioné con aprender lo máximo posible técnicamente. Con el tiempo entendí que eso importa, pero también estaba ignorando algo igual de clave: el negocio.
+Cuando empecé en el desarrollo de software, me obsesioné con aprender lo máximo posible técnicamente. Con el tiempo, entendí que eso importa, pero también estaba ignorando algo igual de clave: el negocio.
 
-Poco a poco con el tiempo empecé a entender que el negocio es una parte esencial para un developer y en realidad para todo el que trabaje en tecnología, son cosas que van de la mano.
+Poco a poco, con el tiempo, empecé a entender que el negocio es una parte esencial para un developer y, en realidad, para todo el que trabaje en tecnología; son cosas que van de la mano.
 Si no entiendes el negocio, quizás te estás perdiendo algo muy importante a la hora de generar código.
 
 <!-- truncate -->
@@ -19,18 +19,16 @@ Si no puedes responder con claridad, no pasa nada.
 Si estás empezando o trabajas en un proyecto donde la monetización es compleja, es normal.
 A mí también me pasó.
 
-Te cuento una situación que me hizo darme la importancia de saber de dónde sale el salario, esto me pasó en un proyecto real.
+Te cuento una situación que me hizo darme cuenta de la importancia de saber de dónde sale el salario; esto me pasó en un proyecto real.
 
 ## Un proyecto sin entender el negocio
 
 Entré en una gran empresa española a través de una consultora. Buen sueldo, proyecto interesante.
-El cliente quería una aplicación web donde usuarios técnicos y comerciales pudieran añadir términos, fórmulas e información operativa. Para mí querían algo extraño: una Wikipedia interna.
+El cliente quería una aplicación web donde usuarios técnicos y comerciales pudieran añadir términos, fórmulas e información operativa. Para mí, querían algo extraño: una Wikipedia interna.
 
 💸 ¿Esto… me iba a pagar el salario?
 
-Sinceramente, no tenía claro la utilidad real de esa aplicación.
-Incluso cuando empecé a picar código.
-No sabíamos qué problema real estábamos resolviendo.
+Sinceramente, no tenía claro la utilidad real de esa aplicación, incluso cuando empecé a picar código. No sabíamos qué problema real estábamos resolviendo.
 
 El proyecto avanzó, añadimos features, y cuando llegaron los stakeholders… quejas.
 No era lo que querían.
@@ -41,12 +39,11 @@ Mi jefe me dijo después que solo esos cuatro ajustes generaron unos 80.000€.
 
 Más de lo que muchos cobran en un año.
 
-Cuando todos entendimos el negocio se cometieron menos errores, menos funcionalidades que luego irían a la basura, pudimos crear mejores features.
-Realmente útiles para el usuario.
+Cuando todos entendimos el negocio, se cometieron menos errores, menos funcionalidades que luego irían a la basura, pudimos crear más valor. Realmente útiles para el usuario.
 Esto no es infalible, pero mejora mucho la calidad y la visión del proyecto.
 
-En tecnología todo suele ser un caos, cambios de prioridades, visión sesgada, MVPs, salidas rápidas con deuda técnica.
-Por eso es más importante que nunca conocer el negocio, te ahorra muchos dolores de cabeza.
+En tecnología, todo suele ser un caos: cambios de prioridades, visión sesgada, MVPs, salidas rápidas con deuda técnica.
+Por eso es más importante que nunca conocer el negocio; te ahorra muchos dolores de cabeza.
 
 ## Por qué era tan importante esa Wikipedia
 
