@@ -1,4 +1,5 @@
 import { Button } from "@site/src/components/core/Button/Button";
+import { ButtonGroup } from "@site/src/components/core/ButtonGroup/ButtonGroup";
 import { useEffect, useState } from "react";
 
 class Stack {
@@ -62,16 +63,7 @@ export const StackDemo = () => {
 
   return (
     <section>
-      <div
-        style={{
-          marginTop: "20px",
-          marginBottom: "20px",
-          display: "flex",
-          gap: "1rem",
-          width: "100%",
-          alignItems: "baseline",
-        }}
-      >
+      <ButtonGroup>
         <Button
           label="Atrás"
           color="secondary"
@@ -104,7 +96,7 @@ export const StackDemo = () => {
             clearHistory();
           }}
         />
-      </div>
+      </ButtonGroup>
 
       <p>Historial de navegación: {stackItems.join(" > ")}</p>
       <p>Página actual: {stack.peek() || "Ninguna"}</p>
