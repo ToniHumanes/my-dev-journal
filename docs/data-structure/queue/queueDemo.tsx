@@ -1,6 +1,7 @@
 import { Button } from "@site/src/components/core/Button/Button";
+import { ButtonGroup } from "@site/src/components/core/ButtonGroup/ButtonGroup";
 import { Label } from "@site/src/components/core/Label";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 
 class Queue<T> {
   private items: T[] = [];
@@ -51,7 +52,7 @@ export const QueueDemo = () => {
 
   return (
     <>
-      <div style={{ display: "flex", gap: "8px", marginBottom: "1rem" }}>
+      <ButtonGroup>
         <Button
           label="Crear notificación en cola"
           onClick={() => {
@@ -66,7 +67,7 @@ export const QueueDemo = () => {
             removeQueueItem();
           }}
         />
-      </div>
+      </ButtonGroup>
 
       <section style={{ marginTop: "8px" }}>
         <p>Primera notificación (actual) en la cola: {queue.peek()}</p>
